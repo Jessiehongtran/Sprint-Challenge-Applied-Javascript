@@ -15,8 +15,8 @@ class TabLink {
       this.cards = document.querySelectorAll(".card");
     } else {
       // else if `all` is false, only select the cards with matching this.tabData values
-      this.cards = document.querySelector(`.card[data-tab="${this.tabData}"]`);
-      console.log(this.cards);
+      this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
+
     }
     /* <- Delete this comment block when you work on the if statement*/
 
